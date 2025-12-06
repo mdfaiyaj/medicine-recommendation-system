@@ -51,3 +51,5 @@ Fully built using:
 ---
 
 ## 📂 Project Structure
+medicine-recommendation-system/ │── dataset/ │   ├── Training.csv │   ├── Symptom-severity.csv │   ├── precautions_df.csv │   ├── description.csv │   ├── medications.csv │   └── workout_df.csv │ │── models/ │   └── svc.pkl │ │── static/ │   ├── bg.jpg │   └── img.jpg │ │── templates/ │   ├── index.html │   ├── result.html │   ├── about.html │   ├── contact.html │   ├── blog.html │   └── developer.html │ │── main.py └── README.md
+
