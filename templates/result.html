@@ -74,36 +74,48 @@
     <a class="navbar-brand fw-bold text-white" href="/">Health Center</a>
 </nav>
 
-<h1 class="title">Your Diagnosis Result</h1>
+<h1 class="title">Your Diagnosis Result <br>
+    <span style="font-size:20px; color:#555;">आपकी बीमारी का परिणाम</span>
+      </h1>
 
 <div class="container col-md-6">
     <div class="result-card">
 
-        <p class="label-title">🩺 Predicted Disease:</p>
+        <p class="label-title">🩺 Predicted Disease: <br>
+        <span style="font-size:15px; color:#666;">अनुमानित रोग:</span>
+           </p>
         <div class="value-box">{{ disease }}</div>
 
-        <p class="label-title">💊 Recommended Medicines:</p>
+        <p class="label-title">💊 Recommended Medicines: <br>
+            <span style="font-size:15px; color:#666;">अनुशंसित दवाएं:</span>
+           </p>
         <div class="value-box">
             {% for med in medicines %}
                 • {{ med }} <br>
             {% endfor %}
         </div>
 
-        <p class="label-title">⚠ Precautions:</p>
+        <p class="label-title">⚠ Precautions:<br>
+        <span style="font-size:15px; color:#666;">सावधानियाँ:</span>
+          </p>
         <div class="value-box">
             {% for p in precautions %}
                 • {{ p }} <br>
             {% endfor %}
         </div>
 
-        <p class="label-title">🥗 Recommended Diet:</p>
+        <p class="label-title">🥗 Recommended Diet:<br>
+         <span style="font-size:15px; color:#666;">अनुशंसित आहार:</span>
+          </p>
         <div class="value-box">
             {% for d in diet %}
                 • {{ d }} <br>
             {% endfor %}
         </div>
 
-        <p class="label-title">🏋 Workout Suggestion:</p>
+        <p class="label-title">🏋 Workout Suggestion:<br>
+        <span style="font-size:18px; color:#555;">आपका वर्कआउट सुझाव</span>
+        </p>
         <div class="value-box">
             {% for w in workout %}
                 • {{ w }} <br>
